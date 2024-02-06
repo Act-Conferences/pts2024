@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="36"
+   height="14"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer1">
+    <rect
+       width="36.041401"
+       height="14.092461"
+       x="0"
+       y="0.016341921"
+       id="rect2383"
+       style="fill:#00cc11;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <text
+       x="1.9064435"
+       y="11.712268"
+       id="text3157"
+       xml:space="preserve"
+       style="font-size:50px;font-style:normal;font-weight:normal;line-height:125%;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+         x="1.9064435"
+         y="11.712268"
+         id="tspan3159"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono Bold">ICAL</tspan></text>
+  </g>
+</svg>

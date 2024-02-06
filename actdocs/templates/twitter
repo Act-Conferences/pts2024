@@ -1,0 +1,48 @@
+<p>
+      You can follow us on:
+  <a href="http://twitter.com/journeesperl"><img class="icon" src="[% make_uri_info('img', 'blogging.twitter.png') %]" alt="twitter"/></a>&nbsp;
+  <a href="http://identi.ca/journeesperl"><img class="icon" src="[% make_uri_info('img', 'blogging.identica.png') %]" alt="identi.ca"/></a>
+</p>
+
+<div id="twitter" >
+
+<a class="twitter-timeline"  href="https://twitter.com/journeesperl"  data-widget-id="345793895558438912">Tweets de @journeesperl</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- 
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 6000,
+  width: 'auto',
+  height: 250,
+  theme: {
+    shell: {
+      background: '#666666',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#333333',
+      color: '#ffffff',
+      links: '#0eaac6'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('journeesperl').start();
+</script>
+-->
+
+</div>
+<p>&nbsp;</p>
+

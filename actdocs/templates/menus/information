@@ -1,0 +1,15 @@
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    Practical Information
+  <b class="caret"></b>
+</a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    [% WRAPPER menus/item %]
+        <a href="[% make_uri('wiki') %]">Wiki</a>
+    [% END %]
+    [% WRAPPER menus/item %]
+        <a href="[% make_uri('maps.html') %]"> Maps </a>
+    [% END %]
+    [% WRAPPER menus/item %]
+        <a href="[% make_uri('accomodation.html') %]"> Accommodation </a>
+    [% END %]
+</ul>

@@ -1,0 +1,3 @@
+[% WRAPPER ui title = loc('Personal Schedule') no_sponsors = 1 %]
+  [% PROCESS core/talk/schedule ical = make_uri('myschedule.ics') %]
+[% END %]

@@ -1,0 +1,44 @@
+<!-- vim:ft=html:
+-->
+[% FILTER collapse %]
+<ul class="nav nav-tabs nav-stacked" role="menu" aria-labelledby="dLabel">
+    <li>
+        [% IF global.request.user %]
+            <a class="pull-right" style="border:none;margin-top: 1px;" href="[% make_uri('logout') %]">{{Logout}}</a>
+            <a href="[% make_uri('main') %]">[% global.request.user.login %]</a>
+        [% ELSE %]
+            <a class="pull-right" style="border:none;margin-top: 1px;" href="[% make_uri('register') %]">{{New user}}</a>
+            <a href="[% make_uri('main') %]">{{Log in}}</a>
+        [% END %]
+    </li>
+    <li>
+        <a href="[% make_uri('sponsors.html') %]"> Sponsors </a>
+    </li>
+    <li>
+        <a href="[% make_uri('donate.html') %]"> Donate </a>
+    </li>
+    <li>
+        <a href="[% make_uri('accommodation.html') %]"> Venue &amp; Accommodation </a>
+    </li>
+<!--
+    <li>
+        <a href="[% make_uri('wiki?node=Getting%20Around') %]"> Oslo Travel </a>
+    </li>
+-->
+    <li>
+    </li>
+
+    [% IF global.request.user %]
+        <li class="dropdown">
+            [% PROCESS menus/users %]
+        </li>
+    [% END %]
+    <li class="dropdown">
+        [% PROCESS menus/wiki %]
+    </li>
+    <li class="dropdown">
+        [% PROCESS menus/admin %]
+    </li>
+</ul>
+[% END %]
+

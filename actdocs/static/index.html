@@ -1,0 +1,70 @@
+[% WRAPPER ui title = global.conference.name %]
+
+<h2>What is the Perl Toolchain Summit?</h2>
+
+<p>Up to 2016, this event was known as Perl QA Hackathon - PQAH.</p>
+
+<p>The PTS is a free of charge coding workshop for people involved in Quality Assurance, testing, packaging, CPAN, and other projects related to quality assurance. The workshop is not necessarily exclusive to Perl projects, however, many of the attendees will be planning to work on projects that have a direct benefit to the Perl language.
+</p>
+
+<p>This Perl Toolchain Summit is the next in a series of annual events, following on from successful summits in:</p>
+
+<ul>
+<li><a href="http://perl-qa.hexten.net/wiki/index.php/OsloQAWorkshop2008">Oslo 2008</a></li>
+<li><a href="http://2009.qa-hackathon.org/">Birmingham 2009</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2010">Vienna 2010</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2011">Amsterdam 2011</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2012">Paris 2012</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2013">North West England 2013</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2014">Lyon 2014</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2015">Berlin 2015</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2016">Rugby 2016</a></li>
+<li><a href="https://perltoolchainsummit.org/qa2017">Lyon 2017</a></li>
+<li><a href="https://perltoolchainsummit.org/pts2018">Oslo 2018</a></li>
+<li><a href="https://perltoolchainsummit.org/pts2019">Marlow 2019</a></li>
+<li><a href="https://perltoolchainsummit.org/pts2023">Lyon 2023</a></li>
+</ul>
+
+<p>These events were a great success for the Perl and Open Source communities, as well as the attendees.</p>
+
+
+<table>
+	<tr>
+		<td>
+			<h2>When, and where, is it happening?</h2>
+
+<p>The PTS is a four day event that takes place from Thursday <b>April 25<sup>th</sup></b>
+to Sunday <b>April, 28<sup>th</sup> 2024</b>, all the day long. It will be held in the town of Lisbon, Portugal.
+</p>
+		</td>
+<td><img src="[% make_uri('pix/20230429_121052.jpg') %]" width="200" alt="Campanile" title="Campanile"></td></tr>
+</table>
+
+[% news = global.news(4);
+   IF news.size > 3;
+     more = news.pop;
+   END;
+ %]
+
+[% IF news.size %]
+<h2>Latest News</h2>
+[% FOREACH item = news %]
+<div class="news-entry">
+ <h3 class="news-header">
+  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span>
+ </h3>
+ <div class="news-text">
+  [% item.content %]
+ </div>
+</div>
+[% END %]
+[% END %]
+
+[% IF more %]
+<p>
+ <a href="[% make_uri('news') %]" class="news-link">Older announcements</a>
+</p>
+[% END %]
+
+[% END %]

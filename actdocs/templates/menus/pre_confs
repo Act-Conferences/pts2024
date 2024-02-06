@@ -1,0 +1,20 @@
+<h3>
+    <a href="[% make_uri('pqah.html') %]">Past Toolchain Summits <small>(known as QA Hackathons)</small></a>
+</h3>
+<div class="row-fluid visible-desktop">
+    <div class="span6">
+        <ul>
+            <li><a href="http://2008.qa-hackathon.org/2008">Oslo 2008</a></li>
+            <li><a href="http://2009.qa-hackathon.org/">Birmingham 2009</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2010">Vienna 2010</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2011">Amsterdam 2011</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2012">Paris 2012</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2013">North West England 2013</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2014">Lyon 2014</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2015">Berlin 2015</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2016">Rugby 2016</a></li>
+            <li><a href="https://perltoolchainsummit.org/qa2017">Lyon 2017</a></li>
+            <li><a href="https://perltoolchainsummit.org/pts2018">Oslo 2018</a></li>
+        </ul>
+    </div>
+</div>

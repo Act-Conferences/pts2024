@@ -1,0 +1,3 @@
+[% WRAPPER ui title = loc('Schedule') no_sponsors = 1 %]
+  [% PROCESS core/talk/schedule %]
+[% END %]

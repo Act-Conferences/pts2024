@@ -1,0 +1,5 @@
+[% WRAPPER menus/item %]
+  <a href="[% make_uri('slideshows.html') %]">
+    <i class="fa fa-camera hidden-md hidden-lg"></i><span class="hidden-sm"> Slideshows</span>
+  </a>
+[% END %]

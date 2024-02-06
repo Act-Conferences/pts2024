@@ -1,0 +1,33 @@
+<!-- vim:ft=html:
+-->
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Admin <b class="caret"></b></a>
+
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+    [% IF global.request.user.is_news_admin ||
+          global.request.user.is_admin      ||
+          global.request.user.is_treasurer  %]
+        [% IF global.request.user.is_news_admin %]
+                [% WRAPPER menus/item %]
+                    <a href="[% make_uri('newsadmin') %]">{{News Administration}}</a>
+                [% END %]
+        [% END %]
+        [% IF global.request.user.is_admin %]
+                [% WRAPPER menus/item %]
+                    <a href="[% make_uri('rights') %]">{{Rights management}}</a>
+                [% END %]
+        [% END %]
+        [% IF global.request.user.is_treasurer %]
+                  [% WRAPPER menus/item %]
+                    <a href="[% make_uri('payments') %]">{{Payments}}</a>
+                  [% END %]
+                  [% WRAPPER menus/item %]
+                    <a href="[% make_uri('csv/payments') %]">{{Payments}} (CSV)</a>
+                  [% END %]
+                  [% WRAPPER menus/item %]
+                    <a href="[% make_uri('csv/payment_items') %]">{{Payment Details}} (CSV)</a>
+                  [% END %]
+        [% END %]
+    [% END %]
+</ul>
+

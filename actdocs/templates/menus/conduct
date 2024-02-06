@@ -1,0 +1,5 @@
+[% WRAPPER menus/item %]
+  <a href="[% make_uri('conduct.html') %]">
+    <i class="fa fa-handshake-o hidden-md hidden-lg"></i><span class="hidden-sm"> Code of Conduct</span>
+  </a>
+[% END %]

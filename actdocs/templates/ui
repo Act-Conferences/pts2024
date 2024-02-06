@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+  <head>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://perltoolchainsummit.org/pts2019/images/design/pts_2017.jpg"/>
+    <meta property="og:title" content="[% IF title; title; ELSE; global.conference.name; END %]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://perltoolchainsummit.org/pts2019/">
+    <meta property="og:description" content="The Perl Toolchain Summit" />
+    <meta property="og:image" content="https://perltoolchainsummit.org/pts2019/images/design/pts_2017.jpg" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'bootstrap.min.css') %]" />
+    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'font-awesome.min.css') %]" />
+    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]?v=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="[% make_uri_info('js', 'jquery-3.2.1.slim.min.js') %]"></script>
+    <title>[% global.conference.name %][% IF title %] | [% title  %][% END %]</title>
+  </head>
+  <body>
+    <div id="page">
+      <div id="page-body">
+        <div class="navbar navbar-default navbar-static-top" id="main-menu" role="navigation">
+          [% PROCESS menu %]
+
+          <div class="container">
+            <div class="jumbotron">
+              [% IF banner %]
+                [% PROCESS banner %]
+              [% END %]
+              [% IF title %]
+			  <br><br><h1>[% title %]</h1><br><br>
+              [% END %]
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="page-content">
+            [% IF no_sponsors %]
+            <div class="col-xs-12">
+              [% content %]
+            </div>
+            [% ELSE %]
+            <div class="col-md-8">
+              [% content %]
+            </div>
+            <div class="col-md-4" style="border-left: 1px solid #ccc;">
+              [% INCLUDE sponsor_list %]
+            </div>
+            [% END %]
+        </div>
+      </div>
+
+      [% PROCESS footer %]
+    </div>
+
+    <script src="[% make_uri_info('js', 'bootstrap.min.js') %]"></script>
+  </body>
+</html>

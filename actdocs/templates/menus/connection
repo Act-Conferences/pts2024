@@ -1,0 +1,4 @@
+[% UNLESS global.request.user %]
+    <a href="[% make_uri('main') %]">{{Log in}}</a><a href="[% make_uri('register') %]">{{New user}}</a>
+[% END %]
+

@@ -1,0 +1,51 @@
+  [% isponsors = [] %]
+  [% BLOCK ispartner %]
+    [% WRAPPER menus/section %]
+    <p><a class="icon" href="[% url %]"><img class="icon" width="225" src="[% make_uri('pix')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a><br> [% type %] Partner</p>
+    [% END %]
+  [% END %]
+
+  [% BLOCK isponsor %]
+    [% WRAPPER menus/section %]
+    <p><a class="icon" href="[% url %]"><img class="icon" width="225" src="[% make_uri('pix')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a></p>
+    [% END %]
+  [% END %]
+
+  [% BLOCK isponsorbronze %]
+    [% WRAPPER menus/section %]
+    <p><a class="icon" href="[% url %]">[% name %]</a></p>
+    [% END %]
+  [% END %]
+
+<center>
+
+  [% WRAPPER menus/section %]
+  <a href="[% make_uri('sponsors.html') %]">Sponsors</a>
+  [% END %]
+
+  <a href="[% make_uri('donate.html') %]"><img src="[% make_uri('pix')%]/btn_donate_LG.gif" border="0" title="Donate to the summit using PayPal" alt="Donate to the summit using PayPal"></a>
+
+<!--
+  [% WRAPPER menus/section %]
+  <a href="[% make_uri('sponsors.html#partners') %]">Partners</a>
+  [% END %]
+
+  [% WRAPPER ispartner
+  img = 'logo-nuug-foundation.png'
+  name = 'NUUG Foundation'
+  url = 'http://www.nuugfoundation.no/en/'
+  type = 'Local'
+  %]
+  [% END %]
+
+  [% WRAPPER ispartner
+  img = 'logo-teknologihuset-230x41.png'
+  name = 'Teknologihuset'
+  url = 'http://teknologihuset.no'
+  type = 'Venue'
+  %]
+  [% END %]
+-->
+
+</center>
+

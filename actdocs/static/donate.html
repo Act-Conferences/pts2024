@@ -1,0 +1,63 @@
+[% WRAPPER ui title = global.conference.name _ " - Donate" %]
+
+<h1>You can help the Perl Toolchain Summit too</h1>
+
+<h2>Why donate?</h2>
+
+<p>A typical PTS costs about 25000 € (hotel rooms 25 %, travels 35 %, venue 15 %, food and beverages 15 %).</p>
+<p> 
+You're a Perl user. You appreciate the quality of the language. 
+You think it worth to invest some money to have help these people make Perl and CPAN even better...
+</p><p>
+The money that will not be used for the Perl Toolchain Summit 2024
+will be donated for the Perl Toolchain Summit 2024 (or the next one).
+</p><p>
+Organizers track accurately the budget. You can ask the incomes/expenses of the former editions, if you're interested in.
+</p>
+
+<h2>How?</h2>
+
+<p>You can donate to the hackathon in EUR (€), USD ($) and GBP (£).<br>
+Choose the button (you'll be redirected to Paypal) and select the amount:</p>
+
+[% paypal = [
+      [ 'EUR (€)', "AXR6SVFB5B3KA" ],
+      [ 'USD ($)', "LUJEKKBV5BT3E" ], 
+      [ 'GBP (£)', "7GZTXXDAKV7W4" ], 
+   ];
+   FOREACH item = paypal
+%]
+<p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="[% item.1 %]">
+    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"> in [% item.0 %]
+    <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
+</p>
+[% END %]
+
+<p>
+If you don't like PayPal, and prefer to make a direct money transfer
+to <a href="http://www.mongueurs.net/">Les Mongueurs de Perl</a>
+(the non-profit organisation that handles donations for this edition of the Perl Toolchain Summit), 
+you can use the following information:
+<ul>
+<li>Email: <tt>contact@mongueurs.net</tt></li>
+<li>IBAN: FR76 3006 6108 7600 0102 7540 188</li>
+<li>BIC: CMCIFRPP</li>
+</ul>
+</p>
+
+<h2>Thank you!</h2>
+
+<!--
+<p>The following people already gave some money to the hackathon:</p>
+
+<ul>
+<li></li>
+</ul>
+-->
+
+[% END %]
+

@@ -1,0 +1,5 @@
+[% UNLESS global.request.user %]
+  [% UNLESS global.config.closed %]
+      <a href="[% make_uri('register') %]">{{New user}}</a>
+  [% END %]
+[% END %]
