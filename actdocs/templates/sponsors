@@ -30,21 +30,6 @@
   <a href="[% make_uri('sponsors.html#partners') %]">Partners</a>
   [% END %]
 
-  [% WRAPPER ispartner
-  img = 'logo-nuug-foundation.png'
-  name = 'NUUG Foundation'
-  url = 'http://www.nuugfoundation.no/en/'
-  type = 'Local'
-  %]
-  [% END %]
-
-  [% WRAPPER ispartner
-  img = 'logo-teknologihuset-230x41.png'
-  name = 'Teknologihuset'
-  url = 'http://teknologihuset.no'
-  type = 'Venue'
-  %]
-  [% END %]
 -->
 
 </center>
